@@ -1,0 +1,20 @@
+name: Pipeline básico
+
+on: [push, pull_request]
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Build
+        run: echo "Build: aquí se construye o prepara el proyecto."
+
+      - name: 2. Test
+        run: echo "Test: aquí se ejecutan pruebas automáticas."
+
+      - name: 3. Quality
+        run: echo "Quality: aquí se revisa la calidad del código."
+
+      - name: 4. Deploy
+        run: echo "Deploy: aquí se prepara o publica el proyecto."
